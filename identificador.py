@@ -5,7 +5,7 @@ from tkinter import *
 from tkinter import filedialog
 from PIL import ImageTk, Image 
 
-longitud, altura = 224, 224
+longitud, altura = 150, 150
 modelo = './conocimiento/modelo.h5'
 pesos_modelo = './conocimiento/pesos.h5'
 cnn = load_model(modelo)
@@ -13,6 +13,7 @@ cnn.load_weights(pesos_modelo)
 
 root = Tk() 
 root.geometry("550x300+300+150") 
+root.title = "Identificador de piezas de Ajedrez"
 root.resizable(width=True, height=True) 
 
 def predict(file):
