@@ -29,11 +29,11 @@ tamano_pool = (2, 2)
 clases = 6
 lr = 0.0004
 
-pasos = 500
+pasos = 800
 validation_steps = 700
 
 epocas=15
-longitud, altura = 224, 224
+longitud, altura = 150, 150
 
 
 
